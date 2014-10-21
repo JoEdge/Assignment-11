@@ -68,11 +68,11 @@ var Human = function(options) {
 
 var sadie = new Dog({
   color: "black",
-  hungry: false
+  hungry: false,
 });
 
 var moonshine = new Dog({
-  color: "blue-red"
+  color: "blue-red",
 });
 
 var atticus = new Dog();
