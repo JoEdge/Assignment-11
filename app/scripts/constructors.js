@@ -36,15 +36,26 @@ function expect(target) {
 //
 // Only add code to *THIS* section!
 
+
 var Dog = function(options) {
   var options = options || {};
     this.color = options.color;
-    this.hungry = false;
+    this.hungry = (options.hungry === undefined) ? true : options.hungry;
+    this.status = options.status || 'normal';
+    this.owner = options.owner;
+
 };
 
 var Human = function(options) {
   var options = options || {};
-    this.cool = true;
+    this.cool = options.cool || false;
+    this.pet = function(animal) {
+      animal.status = 'happy';
+    };
+    this.feed = function(animal) {
+      animal.hungry = false;
+    };
+
 };
 
 
