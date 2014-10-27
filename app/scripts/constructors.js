@@ -38,7 +38,7 @@ function expect(target) {
 
 
 var Dog = function(options) {
-  var options = options || {};
+   var options = options || {};
     this.color = options.color;
     this.hungry = (options.hungry === undefined) ? true : options.hungry;
     this.status = options.status || 'normal';
@@ -47,7 +47,7 @@ var Dog = function(options) {
 };
 
 var Human = function(options) {
-  var options = options || {};
+    options = options || {};
     this.cool = options.cool || false;
     this.pet = function(animal) {
       animal.status = 'happy';
