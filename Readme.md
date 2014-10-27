@@ -1,6 +1,6 @@
 #Assignment 11
 
-##This assignment writing Constructors that allow passing of prewritten tests
+##Writing Constructors that allow passing of prewritten tests
 
 ####How to use it
 - Clone my repo
